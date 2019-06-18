@@ -1,0 +1,27 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<h1>Products</h1>
+
+
+ <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+     
+      </div>
+      <div class="col-md-8">
+      	<% @products.each do |product| %>
+	      	<div class="container">
+		    	<div class="row">
+		        	<div class="col-sm-4 py-2">
+		            	<div class="card card-body h-100">
+		                	<h4>  <%= product.brand %>  <%= product.model %> </h4>
+		            	</div>
+		        	</div>
+		    	</div>
+			</div>
+		<% end %>
+      </div>
+      
+    </div>

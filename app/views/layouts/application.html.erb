@@ -7,9 +7,39 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!--TOP BAR-->
+  <div class="topnav">
+    <a href="#home">Z-Mobile</a>
+  </div>
+
+<!--HEADER-->
+  <div>
+    <nav>
+      <a >Pre-pay Options</a> |
+      <a >Handsets</a> |
+      <a >Subscriptions</a> |
+    </nav>
+  </div>  
+
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">
+        <%= render "partials/nav" %>
+      </div>
+    </div>
+</div> 
+      <%= yield %>
   </body>
+  <footer>
+  <p>Z-Mobile, all rights reserved</p>
+  <p>Contact information: <a>
+  contact@zmobile.com</a>.</p>
+</footer>
+
 </html>
